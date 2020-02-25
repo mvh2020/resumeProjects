@@ -3,14 +3,14 @@ This repository exists to display projects made by Matt Hoffman for employers to
 
 <b><a href='https://people.rit.edu/mvh9602/330/project1/project1.html'>Pink Floyd Audio Visualizer</a></b>
 
-![Home Page](media/readmeImages/paused.png)
+![Home Page](/media/readmeImages/paused.png)
 
-![Playing Media](media/readmeImages/noSettings.png)
+![Playing Media](/media/readmeImages/noSettings.png)
 
-![RGB Mapping Effect](media/readmeImages/rgbMap.png)
+![RGB Mapping Effect](/media/readmeImages/rgbMap.png)
 
-![Visual Noise Effect](media/readmeImages/noise.png)
+![Visual Noise Effect](/media/readmeImages/noise.png)
 
-![Background Gradient Effect](media/readmeImages/gradient.png)
+![Background Gradient Effect](/media/readmeImages/gradient.png)
 
-![Combined Effects](media/readmeImages/combined.png)
+![Combined Effects](/media/readmeImages/combined.png)
