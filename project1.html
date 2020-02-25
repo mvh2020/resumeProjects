@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Audio Viz Project</title>
+	<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="js/loader.js" type="module"></script>
+	<link href="css/project1.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="col-"></div>
+	<div class="col-md-">
+	<canvas width="640" height="640"></canvas>
+	
+	<div id="controls">
+		<section>
+		<audio controls></audio>
+		<label>Track: 
+			<select id="trackSelect">
+				<option value="media/PigsOnTheWing.mp3" selected='selected'>Pigs On The Wing (Part One)</option>
+				<option value="media/Dogs.mp3">Dogs</option>
+			</select>
+		</label>
+		<button id="playButton" data-playing="no"></button>
+		<button id="fsButton">Full Screen</button>
+		</section>
+		<section>
+			Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+			<span id="volumeLabel">???</span>
+			RGB Map: <input type="checkbox" id="hueShift"/>
+			Noise: <input type="checkbox" id="noise"/>
+			BG Gradient: <input type="checkbox" id="gradientBG"/>
+		</section>
+
+		<span>Waveform: </span>
+		<select id="waveform">
+			<option value="sine">Sine</option>
+			<option value="square">Square</option>
+			<option value="sawtooth" selected="selected">Sawtooth</option>
+			<option value="triangle">Triangle</option>
+		</select>
+
+		<span>Filter Type: </span>
+		<select id="filterType">
+			<option value="lowpass" selected="selected">Lowpass</option>
+			<option value="highpass">Highpass</option>
+			<option value="bandpass">Bandpass</option>
+		</select>
+
+		<span>Filter Frequency: </span>
+			<input id="filterFrequency" type="range" min="20.0" max="10000.0" value="1000" step="0.01">
+			<span id="frequencyLabel">???</span>
+
+			<img src="./media/audio-viz-controls.png" width="500px" height="157px" id="keys">
+	</div>
+	</div>
+	<div class="col-"></div>
+</body>
+</html>
