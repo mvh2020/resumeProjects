@@ -4,7 +4,7 @@ This repository exists to display projects made by Matt Hoffman for employers to
 <b><a href='https://fullstack-project-matt-hoffman.herokuapp.com/'>Fullstack Social Media Clone</a></b>
 
 This is a screenshot of the home page. It displays all stored forum posts in chronological order. Posts can be liked once a user logs in.
-![Home Page](/media/readmeImages/homePage.PNG)
+![Home Page](/media/readmeImages/mainPage.PNG)
 
 This is the account signup widget, which drops down from the top of the home page. Passwords have to match between the inputs before the account is made. Passwords are encrypted using salt generated hashes. Posts are validated using CSRF tokens. Accounts are structured using Mongoose schemas before being sent to the database.
 ![Sign Up Page](/media/readmeImages/signUp.PNG)
