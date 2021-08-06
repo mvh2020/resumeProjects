@@ -1,0 +1,287 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#logo {
+    height: 40px;
+    width: 40;
+    padding-top: 5px;
+    float:left;
+    border-radius: 8px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #55ee85;
+}
+
+nav:nth-child(1) {
+    padding-left: 25px;
+}
+
+.navlink {
+    padding: 5px;
+    padding-top: 12px;
+    padding-left: 20px;
+    color: white;
+    font-size: 1.3em;
+    float: left;
+}
+
+.navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #55ee85;
+    transition: background-color 0.4s ease;
+}
+
+.navlink a:hover {
+    transition: background-color 0.8s ease;
+    background-color: #66ffab;
+}
+
+.postForm {
+    /*height: 35px;
+    width: 900px;*/
+    margin-top:0px;
+    padding-top:10px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.postForm label {
+    display: inline-block;
+    width: 75px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    float: left;
+    color: #55ee85;
+}
+
+.postForm .labelSml {
+    width: 120px;
+    font-size: 0.9em;
+}
+
+.postForm input[type=text] {
+    float:left;
+}
+
+.postForm input[type=checkbox] {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+.makePostSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 90px;
+    background-color: #55ee85;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.makePostSubmit:link, .makePostSubmit:visited, .makePostSubmit:hover, .makePostSubmit:active {
+    color: white;
+}
+
+.makePostSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #33cc63;
+}
+
+.mainForm {
+    height: 175px;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 1.2em;
+}
+
+.mainForm h3 {
+    text-align: center;
+}
+
+.mainForm label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.formSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 100px;
+    background-color: #55ee85;
+    border-radius: 2px;
+    border-color: #66ee85;
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {
+    color: white;
+}
+
+.formSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #33cc63;
+}
+
+#user, #pass, #pass2 {
+    text-align: center;
+    font-size: 1.1em;
+    width: 180px;
+    border-radius: 6px;
+}
+
+#user:focus, #pass:focus, #pass2:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px #55ee85;
+}
+
+#appMessage {
+    display:none;
+    top: 250px;
+    width: 250px;
+    height: 650px;
+    position: absolute;
+    z-index: 200;
+    right: 0px;
+    overflow: hidden;
+}
+
+#appMessage h3 {
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#speech {
+    height: 120px;
+    width: 250px;
+    z-index:300;
+}
+
+#errorMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+#post {
+    z-index: 225;
+    margin-top: -20px;
+    margin-left: 135px;
+    height: 450px;
+    width: 300px;
+    -ms-transform: rotate(330deg);
+    -webkit-transform: rotate(330deg); 
+    transform: rotate(330deg);
+}
+
+#posts {
+    /*width: 40%;*/
+    min-width: 400px;
+    border: 2px solid #55ee85;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.post {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 35px;
+    border: 2px solid #55ee85;
+    border-radius: 4px;
+    background-color: #55ee85;
+    padding: 10px;
+    padding-bottom: 30px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.sponsored {
+    border-color: black;
+}
+
+.post:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #66ffab;
+}
+
+img.profilePic {
+    margin-left: 25px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    margin-top:10px;
+    /*float:left;*/
+}
+
+h3.emptyPost {
+    width: 400px;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 18px;
+}
+
+h3.postOwner {
+    /*float:left;
+    width: 200px;*/
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+
+h3.postBody {
+    /*float:right;*/
+    text-align: left;
+    /*width: 100px;
+    font-weight: bold;*/
+    padding-right: 5px;
+    padding-left: 25px;
+    font-size: 0.9em;
+}
+
+.postLikes {
+    font-size: 1em;
+}
+
+.likeButton {
+    /*float: left;*/
+}
+
+.post:first-child {
+    margin-top: 10px;
+}
+
+.post:last-child {
+    margin-bottom:10px;
+}
