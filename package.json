@@ -51,7 +51,7 @@
     "mongoose": "^5.9.5",
     "react-router-dom": "^5.1.2",
     "serve-favicon": "^2.5.0",
-    "underscore": "^1.9.2"
+    "underscore": "^1.12.1"
   },
   "repository": {
     "type": "git",
